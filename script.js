@@ -31,7 +31,8 @@ const caseStudies = [
       "Learned that significant edits (new creative, budget swings over 20%) reset Meta's learning phase - and that CTWA campaigns need to be read on \"Messaging conversations started,\" not at the Leads column, which doesn't populate for this ad type.",
      
       // optional: add a path like "images/project-1.jpg" once you upload one
-      image: "Anohga A W - Final Result.png"
+      image: "Anohga A W - Final Result.png",
+      imageAlt: "Meta Ads"
   },
 
   /* Add your next project here — copy the block above this line. */
@@ -123,7 +124,8 @@ const certifications = [
     name: "The High Paying Clients",
     issuer: "Through the High Paying Clients certification course, I learned practically how to run paid ad campaigns that are built around real business outcomes, not just clicks and impressions. Also learned how to read campaign data properly - cost per result (CPR), frequency, click through rate (CTR). By using those metrics to make smarter decisions for Scaling.",
     date: "", // replace with your actual completion date
-    image: "Certificate - 100 Days Challenge Digital Marketing.png" // put your certificate image filename here once uploaded
+    image: "Certificate - 100 Days Challenge Digital Marketing.png", // put your certificate image filename here once uploaded
+    imageAlt: "Digital Marketing"
   },
 
   /* Add another certification here — copy the block above this line. */
@@ -154,7 +156,7 @@ const blogPosts = [
     tag: "Meta Ads",
     hook: "Same thing happened to my client. It may be a small thing in the strategy you missed.",
     cover:  "Meta Ads - clicks no sales.png",
-    coverAlt: "Meta Ads getting clicks but no sales",
+    coverAlt: "Meta Ads",
     sections: [
       { heading: "An Offer Can Convert Your Clicks Into Sales", text: "One right offer can entirely change your clicks into a huge amount of sales. Make sure the offer gives profit to both your business and your customers." },
       { heading: "Are You Targeting the Right People?", text: "Targeting too broad for a new ad account may get you unrelated leads or sales. Target only the audience you actually want instead of going broad.\n\nFor example, if you're running Meta Ads for an aerial yoga workshop, targeting everyone interested in \u201cFitness\u201d is too broad.\n\nInstead, target the people who are actually looking to join:\n\u2022 Women aged 25\u201340\n\u2022 Interested in Yoga & Wellness\n\u2022 Living near your studio\n\u2022 Already searching for healthy lifestyle activities\n\nThe more relevant your audience, the better your chances of getting real enquiries instead of random clicks." },
@@ -231,8 +233,8 @@ caseList.innerHTML = caseStudies.length
   `).join("")}
 </div>
 <p class="case-lessons"><strong>What I learned:</strong> ${c.lessons}</p>
-${c.image ? `<img class="case-image" src="${c.image}" alt="${c.title}">` : ""}
-    </article>
+${c.image ? `<img class="case-image" src="${c.image}" alt="${c.imageAlt || c.title}">` : ""}
+</article>
   `).join("")
   : `<p class="published-empty">Projects will appear here.</p>`;
 
@@ -286,8 +288,8 @@ certList.innerHTML = certifications.length
         </div>
         <span class="cert-badge">Completed</span>
       </div>
-      ${c.image ? `<img class="cert-image" src="${c.image}" alt="${c.name}">` : ""}
-    </div>
+  ${c.image ? `<img class="cert-image" src="${c.image}" alt="${c.imageAlt || c.name}">` : ""}
+</div>
   `).join("")
   : `<p class="published-empty">Certifications will appear here.</p>`;
 
