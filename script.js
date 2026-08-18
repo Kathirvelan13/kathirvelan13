@@ -44,7 +44,7 @@ const projects = [
   {
     title: "SEO — Built This Entire Portfolio Around SEO Standards",
     intro:
-      "I had built this entire portfolio you are currently looking at to get real hands-on experience instead of just theory. Every part of this portfolio is built from planning to publishing on proper SEO standards.",
+      "I had built this entire portfolio you are currently looking at is to get real hands-on experience instead of just theory. Every part of this portfolio is built from planning to publishing on proper SEO standards.",
     subtopics: [
       {
         heading: "Competitor Research",
