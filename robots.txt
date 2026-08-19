@@ -4,3 +4,4 @@ User-agent: *
 Disallow: 
 Crawl-delay: 5
 Sitemap: https://kathirvelan13.github.io/kathirvelan13/sitemap.xml
+Sitemap: https://kathirvelan13.github.io/kathirvelan13/images-sitemap.xml
